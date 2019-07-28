@@ -48,6 +48,27 @@
   }
 
   /* HERO ******************************************************************* */
+  .db__hero {
+    background: url('../../img/hero-bg@2x.jpg') top / cover;
+
+    .db__hero__main {
+
+      .db__containerish {
+        grid-template-columns: 1fr 2fr;
+
+        .db__section-info {
+          z-index: 5;
+          grid-column: 2;
+
+          h1 {
+            text-align: left;
+          }
+
+        }
+      }
+    }
+  }
+
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
   /* ABOUT US  ************************************************************** */
@@ -116,6 +137,31 @@
   }
 
   /* HERO ******************************************************************* */
+  .db__hero {
+    background: url('../../img/hero-bg@2x.jpg') top / cover;
+
+    .db__hero__main {
+
+      .db__containerish {
+        grid-template-columns: 1.5fr 2fr;
+
+        &::before {
+          background: rgba($color-dark, 0);
+        }
+
+        .db__section-info {
+          z-index: 5;
+          grid-column: 2;
+
+          h1 {
+            text-align: left;
+          }
+
+        }
+      }
+    }
+  }
+
   /* SEARCH ***************************************************************** */
   .search {
     // background: $color-light;
@@ -224,6 +270,31 @@
   }
 
   /* HERO ******************************************************************* */
+  .db__hero {
+    background: url('../../img/hero-bg@2x.jpg') top / cover;
+
+    .db__hero__main {
+
+      .db__containerish {
+        grid-template-columns: 2fr 1.5fr;
+
+        &::before {
+          background: rgba($color-dark, 0);
+        }
+
+        .db__section-info {
+          z-index: 5;
+          grid-column: 2;
+
+          h1 {
+            text-align: left;
+          }
+
+        }
+      }
+    }
+  }
+
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
   /* ABOUT US  ************************************************************** */
