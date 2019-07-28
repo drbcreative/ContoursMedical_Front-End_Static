@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 .db__containerish {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   height: auto;
   padding: 0;
@@ -16,32 +16,21 @@ section {
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
-.hero {
-  background: url('../img/hero@2x.jpg') center / cover;
-  padding: 20px 20px;
-  min-height: 75vh;
-  max-height: 740px;
-  // background: red;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
+.db__hero {
+  background: url('../../img/hero-bg@2x.jpg') top / cover;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba($color-dark, .8);
-  }
+  .db__hero__main {
+    padding: 0 1rem;
 
-  .db__section-info {
-    text-align: center;
-    z-index: 2;
+    @media screen and (min-width: 1400px) {
+      padding: 0;
+    }
+
+    .db__containerish {
+      background: url('../../img/hero@2x.jpg') center / cover;
+      height: 75vh;
+      max-height: 624px;
+    }
   }
 }
 

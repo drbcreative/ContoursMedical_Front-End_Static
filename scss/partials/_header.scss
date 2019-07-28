@@ -2,30 +2,34 @@
 /* HEADER */
 /* -------------------------------------------------------------------------- */
 header {
-  position: static;
-  width: 100%;
-  z-index: 9999;
-  height: auto;
+  position: relative;
+  // position: static;
+  // width: 100%;
+  // z-index: 9999;
+  // height: auto;
 }
 
 /* -------------------------------------------------------------------------- */
 /* TOP BAR */
 /* -------------------------------------------------------------------------- */
-.topbar {
+.db__topbar {
   width: 100%;
   height: 30px;
   height: auto;
-  // padding: .3rem 0;
   background-color: $color-light;
 
-  .containerish {
+  .db__containerish {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    padding: 0.2rem 0.5rem;
+    padding: .2rem 1rem;
+
+    @media screen and (min-width: 1400px) {
+      padding: 0;
+    }
 
 
-    .topbar-link {
+    .db__topbar-link {
       font-family: $font-primary;
       font-size: 15px;
       font-weight: 300;
@@ -37,7 +41,7 @@ header {
       }
     }
 
-    .social-link {
+    .db__social-link {
       color: $color-text-grey;
       margin-right: 0.5rem;
 
@@ -54,11 +58,11 @@ header {
       }
     }
 
-    .social-link:last-child {
+    .db__social-link:last-child {
       margin-right: 0 !important;
     }
 
-    .col-left {
+    .db__col-left {
       grid-row: 1;
       display: flex;
       align-items: center;
@@ -71,11 +75,11 @@ header {
       }
     }
 
-    .col-mid {
+    .db__col-mid {
       display: none;
     }
 
-    .col-right {
+    .db__col-right {
       display: none;
       // grid-row: 2;
       // display: flex;
@@ -83,12 +87,12 @@ header {
       // justify-content: center;
     }
 
-    .topbar-link {
+    .db__topbar-link {
       margin-right: 1rem;
       // display: none;
     }
 
-    .topbar-link:last-child {
+    .db__topbar-link:last-child {
       margin-right: 0 !important;
       display: inline-block;
     }
@@ -99,60 +103,51 @@ header {
 /* NAVBAR */
 /* -------------------------------------------------------------------------- */
 .navbar-wrapper {
-  background: $color-white;
   position: relative;
   overflow: visible;
-  // min-height: 100px;
   display: flex;
   align-items: center;
+  padding-bottom: .8rem;
 
-  @media screen and (min-width: 1200px) {
-    background: rgba($color-white, .8);
-  }
+
 
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
   }
 
-  .containerish {
-    // width: 95%;
-    max-width: 100%;
+  .db__containerish {
     margin: 0 auto;
     height: auto;
     padding: 0 1rem;
     display: grid;
     grid-gap: 1rem;
 
-    @media screen and (min-width: 1200px) {
-      padding: 0 2rem;
+    @media screen and (min-width: 1400px) {
+      padding: 0;
     }
   }
 }
 
 .navbar {
   .nav-logo {
-    max-width: 250px;
+    max-width: 200px;
     // margin-top: 18px;
   }
 }
 
 .nav-item {
-  margin-right: 0.7rem;
+  margin-right: 1rem;
 
   // font-family: $font-primary !important;
   .nav-link {
     font-family: $font-primary !important;
-    color: $color-main !important;
-    font-size: 0.813rem;
+    color: $color-dark;
+    font-size: 1rem;
     font-style: normal;
 
     &:hover {
       color: $color-light-accent !important;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-weight: 700;
     }
   }
 }
@@ -166,7 +161,7 @@ header {
   position: relative;
 
   &::after {
-    content: "|";
+    content: "•";
     color: $color-dark;
     position: absolute;
     top: 50%;
@@ -185,21 +180,20 @@ header {
 }
 
 .dropdown-menu {
-  background-color: rgba($color-main, .95);
+  background-color: rgba($color-white, .95);
   border-color: transparent;
   margin-top: 0 !important;
-  padding-left: 1rem;
+  padding-left: .5rem;
 
   .dropdown-item {
     padding-left: 0;
     font-family: $font-primary;
     font-size: 1rem;
     position: relative;
-
-    color: $color-light;
+    color: $color-main;
     font-family: $font-primary;
     font-weight: 400;
-    font-size: 1rem;
+
 
     &:hover {
       background-color: transparent;
@@ -216,118 +210,7 @@ header {
   }
 }
 
-.mega-menu-header {
-  font-family: $font-primary;
-  font-size: 24px;
-  font-weight: 700;
-  color: $color-white;
-  margin-bottom: .5rem;
-}
-
-.mega-menu-list {
-  padding: 0;
-  margin: 0;
-
-  .dropdown-item {
-    padding-left: 0;
-    font-family: $font-primary;
-    font-size: 1rem;
-    position: relative;
-
-    &::before {
-      content: '•';
-      margin-right: .3rem;
-    }
-
-    a {
-      color: $color-white;
-
-      &:hover {
-        color: $color-dark-accent;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
 .dropdown-toggle::after {
   border: none !important;
   margin-left: 0 !important;
-}
-
-@media screen and (min-width: 1200px) {
-  .dropdown-menu.mega-menu {
-    min-width: 100%;
-    right: -300px;
-    left: auto;
-
-    .containerish {
-      // width: 500px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 6rem;
-      padding: 1rem 3rem;
-
-      // .mega-menu-header {
-      //   font-family: $font-primary;
-      //   font-size: 24px;
-      //   font-weight: 700;
-      //   color: $color-white;
-      // }
-
-      // .mega-menu-list {
-      //   padding: 0;
-
-      //   .dropdown-item {
-      //     padding-left: 0;
-      //     font-family: $font-primary;
-      //     font-size: 1rem;
-      //     position: relative;
-
-      //     &::before {
-      //       content: '•';
-      //       margin-right: .3rem;
-      //     }
-
-      //     a {
-      //       color: $color-white;
-
-      //       &:hover {
-      //         color: $color-dark-accent;
-      //         text-decoration: none;
-      //       }
-      //     }
-
-      //   }
-      // }
-
-      .col-left {
-        // background: red;
-      }
-
-      .col-middle {
-        justify-self: center;
-      }
-
-      .col-right {
-        justify-self: flex-end;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  // .dropdown-menu.mega-menu {
-  //   width: 50vw;
-  //   left: -300%;
-  //   position: relative;
-
-  // ::after {
-  //   content: 'hello';
-  //   font-size: 3rem;
-  //   position: absolute;
-  //   top: -50px;
-  //   right: 200px;
-  //   color: $color-main;
-  // }
 }

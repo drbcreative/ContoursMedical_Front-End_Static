@@ -23,13 +23,11 @@
   }
 
   /* TOPBAR ***************************************************************** */
-  .topbar {
+  .db__topbar {
     .db__containerish {
-      max-width: 100% !important;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 1fr;
-      padding: 0.2rem 0.5rem;
 
       .db__col-left {
         grid-row: 1;
@@ -50,14 +48,6 @@
   }
 
   /* HERO ******************************************************************* */
-  .hero {
-    padding: 20px 20px;
-
-    &::before {
-      background: rgba($color-dark, 0);
-    }
-  }
-
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
   /* ABOUT US  ************************************************************** */
@@ -103,10 +93,9 @@
   }
 
   /* TOPBAR ***************************************************************** */
-  .topbar {
+  .db__topbar {
     .db__containerish {
       grid-template-columns: max-content 1fr max-content;
-      padding: 0.2rem 1rem;
 
       .db__col-left {
         grid-row: 1;
@@ -212,30 +201,20 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
 
-  /* TOPBAR ******************************************************* */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
 
   /* TOPBAR ******************************************************* */
-  .topbar {
-
+  .db__topbar {
     .db__containerish {
-
-      .col-mid {
+      .db__col-mid {
         display: flex;
         grid: 2;
         justify-content: center;
       }
 
-      .topbar-link {
+      .db__topbar-link {
         // margin-right: 1rem;
         display: inline-flex;
       }
-
-      padding: 0.2rem 2rem;
     }
   }
 
@@ -245,15 +224,6 @@
   }
 
   /* HERO ******************************************************************* */
-  .hero {
-    margin-top: 30px;
-    padding: 20px 20px;
-
-    &::before {
-      background: rgba($color-dark, 0);
-    }
-  }
-
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
   /* ABOUT US  ************************************************************** */
