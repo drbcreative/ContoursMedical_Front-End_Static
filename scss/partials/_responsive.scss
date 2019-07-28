@@ -1,0 +1,296 @@
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SMALL BREAKPOINT (Landscape Phones and Up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .ui-btn {
+    display: inline-flex;
+    min-width: 220px;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    .db__containerish {
+      max-width: 100% !important;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      padding: 0.2rem 0.5rem;
+
+      .db__col-left {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .db__col-right {
+        // grid-row: 1;
+        // grid-column: 2;
+        // display: flex;
+        // align-items: center;
+        // justify-content: flex-end;
+      }
+    }
+  }
+
+  /* HERO ******************************************************************* */
+  .hero {
+    padding: 20px 20px;
+
+    &::before {
+      background: rgba($color-dark, 0);
+    }
+  }
+
+  /* SEARCH ***************************************************************** */
+  /* EVENT/COOLSCULPTING **************************************************** */
+  /* ABOUT US  ************************************************************** */
+  /* BOTOX/FILLERS ********************************************************** */
+  /* IPL ******************************************************************** */
+  /* NEWSLETTER ************************************************************* */
+  /* LASER HAIR ************************************************************* */
+  /* LASER GENESIS ********************************************************** */
+  /* TESTIMONIAL ************************************************************ */
+  /* CONSULTATION *********************************************************** */
+  /* FOOTER ***************************************************************** */
+  .footer2 {
+    padding: 0 2rem;
+
+    .db__containerish {
+      display: grid;
+      grid-template-rows: 1;
+      grid-template-columns: max-content 1fr max-content;
+      align-items: center;
+
+      .db__foot-left {
+        display: block;
+      }
+
+      .db__foot-middle {}
+
+      .db__foot-right {
+        display: block;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+    width: 225px;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+    .db__containerish {
+      grid-template-columns: max-content 1fr max-content;
+      padding: 0.2rem 1rem;
+
+      .db__col-left {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .db__col-right {
+        grid-row: 1;
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  /* HERO ******************************************************************* */
+  /* SEARCH ***************************************************************** */
+  .search {
+    // background: $color-light;
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      grid-gap: 1rem;
+      align-items: center;
+
+      .form-control {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .form-control:not(button) {
+        border: 1px solid #ededed;
+      }
+
+      ::placeholder {
+        color: #3e3a42;
+        font-family: $font-primary;
+        font-size: 15px;
+      }
+    }
+  }
+
+  /* EVENT/COOLSCULPTING **************************************************** */
+  /* ABOUT US  ************************************************************** */
+  /* BOTOX/FILLERS ********************************************************** */
+  /* IPL ******************************************************************** */
+  /* NEWSLETTER ************************************************************* */
+  /* LASER HAIR ************************************************************* */
+  /* LASER GENESIS ********************************************************** */
+  /* TESTIMONIAL ************************************************************ */
+  /* CONSULTATION. ********************************************************** */
+  .appointments {
+    background: url("../img/appointments-bg@2x.jpg") center / cover;
+    min-height: 400px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .appointment-wrapper {
+      background: rgba($color-white, 0.90);
+      padding: 2rem 8%;
+      max-width: 865px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 1rem;
+
+      .form-copy {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        justify-self: center;
+        text-align: center;
+      }
+
+      .form-control {
+        border-radius: 0;
+      }
+
+      input:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        grid-row: 5;
+        grid-column: 1 / -1 !important;
+        justify-self: center;
+      }
+    }
+  }
+
+  /* FOOTER *******************************************************************/
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+
+  /* TOPBAR ******************************************************* */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* TOPBAR ******************************************************* */
+  .topbar {
+
+    .db__containerish {
+
+      .col-mid {
+        display: flex;
+        grid: 2;
+        justify-content: center;
+      }
+
+      .topbar-link {
+        // margin-right: 1rem;
+        display: inline-flex;
+      }
+
+      padding: 0.2rem 2rem;
+    }
+  }
+
+  /* NAVBAR ***************************************************************** */
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  /* HERO ******************************************************************* */
+  .hero {
+    margin-top: 30px;
+    padding: 20px 20px;
+
+    &::before {
+      background: rgba($color-dark, 0);
+    }
+  }
+
+  /* SEARCH ***************************************************************** */
+  /* EVENT/COOLSCULPTING **************************************************** */
+  /* ABOUT US  ************************************************************** */
+  /* BOTOX/FILLERS ********************************************************** */
+  /* IPL ******************************************************************** */
+  /* NEWSLETTER ************************************************************* */
+  /* LASER HAIR ************************************************************* */
+  /* LASER GENESIS ********************************************************** */
+  /* TESTIMONIAL ************************************************************ */
+  /* CONSULTATION *********************************************************** */
+  .appointments {
+    padding: 12rem 8rem 6rem 8rem;
+
+    .appointment-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {
+
+  /* HERO ******************************************************************* */
+  /* SEARCH ***************************************************************** */
+  /* REQUEST APPT. ********************************************************** */
+  /* FOOTER ***************************************************************** */
+}
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {
+  /* HERO ******************************************************************* */
+  /* SEARCH ***************************************************************** */
+  /* TESTIMONIAL SECTION **************************************************** */
+  /* REQUEST APPT. ********************************************************** */
+}

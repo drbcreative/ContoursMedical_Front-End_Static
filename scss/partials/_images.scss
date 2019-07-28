@@ -1,0 +1,14 @@
+/* -------------------------------------------------------------------------- */
+/* IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+.db__img-border {
+  border: 3px solid $color-white;
+}
+
+.db__img-shadow {
+  box-shadow: 0px 6px 10px rgba($color-black, 0.08);
+}
+
+.db__img-round {
+  border-radius: 10px;
+}

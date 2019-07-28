@@ -1,0 +1,153 @@
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.db__containerish {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background: url('../img/hero@2x.jpg') center / cover;
+  padding: 20px 20px;
+  min-height: 75vh;
+  max-height: 740px;
+  // background: red;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-dark, .8);
+  }
+
+  .db__section-info {
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH SECTION */
+/* -------------------------------------------------------------------------- */
+.search {
+  background: $color-light;
+  padding: 40px 20px;
+
+  .db__containerish {
+    display: grid;
+
+    .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control:not(button) {
+      border: 1px solid #ededed;
+    }
+
+    ::placeholder {
+      color: #3e3a42;
+      font-family: $font-primary;
+      font-size: 15px;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* EVENT AND COOLSCULPTING SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* ABOUT US SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* IPL SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* LASER HAIR REDUCTION SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* LASER GENESIS SECTION */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* TESTIMONIAL SECTION */
+/* -------------------------------------------------------------------------- */
+.testimonial {
+  background: url('../img/testimonials-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .db__containerish {
+    height: 40vh;
+    max-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .db__section-info {
+      text-align: center;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* BOOK CONSULTATION SECTION */
+/* -------------------------------------------------------------------------- */
+.appointments {
+  background: url("../img/appointments-bg@2x.jpg") center / cover;
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .appointment-wrapper {
+    flex: 1;
+    background: rgba($color-white, 0.90);
+    padding: 2rem 1rem;
+    max-width: 865px;
+    display: grid;
+
+    .form-copy {
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
