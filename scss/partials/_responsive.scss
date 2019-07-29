@@ -54,53 +54,77 @@
     .db__hero__main {
 
       .db__containerish {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 75%;
+        justify-content: center;
 
         .db__section-info {
           z-index: 5;
-          grid-column: 2;
-
-          h1 {
-            text-align: left;
-          }
-
+          grid-column: 1;
         }
+
+        h1 {
+          text-align: left;
+        }
+
       }
     }
   }
 
+
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
-  /* ABOUT US  ************************************************************** */
-  /* BOTOX/FILLERS ********************************************************** */
-  /* IPL ******************************************************************** */
-  /* NEWSLETTER ************************************************************* */
-  /* LASER HAIR ************************************************************* */
-  /* LASER GENESIS ********************************************************** */
-  /* TESTIMONIAL ************************************************************ */
-  /* CONSULTATION *********************************************************** */
-  /* FOOTER ***************************************************************** */
-  .footer2 {
-    padding: 0 2rem;
+  .event-coolsculpting {
+    background: url('../../img/event-cool-sculpting-bg@2x.jpg') top / cover;
+    min-height: 600px;
 
-    .db__containerish {
-      display: grid;
-      grid-template-rows: 1;
-      grid-template-columns: max-content 1fr max-content;
-      align-items: center;
+    .db__event__wrapper {
+      position: relative;
 
-      .db__foot-left {
-        display: block;
+      .db__event__white-box {
+        display: none;
       }
 
-      .db__foot-middle {}
-
-      .db__foot-right {
-        display: block;
+      .db__containerish {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 75%;
+        grid-column-gap: 1rem;
+        justify-content: center;
       }
     }
   }
 }
+
+/* ABOUT US  ************************************************************** */
+/* BOTOX/FILLERS ********************************************************** */
+/* IPL ******************************************************************** */
+/* NEWSLETTER ************************************************************* */
+/* LASER HAIR ************************************************************* */
+/* LASER GENESIS ********************************************************** */
+/* TESTIMONIAL ************************************************************ */
+/* CONSULTATION *********************************************************** */
+/* FOOTER ***************************************************************** */
+.footer2 {
+  padding: 0 2rem;
+
+  .db__containerish {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+
+    .db__foot-left {
+      display: block;
+    }
+
+    .db__foot-middle {}
+
+    .db__foot-right {
+      display: block;
+    }
+  }
+}
+
 
 /* -------------------------------------------------------------------------- */
 /* LARGE BREAKPOINT (Desktops 992px and up) */
@@ -191,6 +215,30 @@
   }
 
   /* EVENT/COOLSCULPTING **************************************************** */
+  .event-coolsculpting {
+    background: url('../../img/event-cool-sculpting-bg@2x.jpg') top / cover;
+    min-height: 600px;
+
+    .db__event__wrapper {
+      position: relative;
+
+      .db__event__white-box {
+        display: none;
+      }
+
+      .db__containerish {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 1rem;
+        grid-column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+
   /* ABOUT US  ************************************************************** */
   /* BOTOX/FILLERS ********************************************************** */
   /* IPL ******************************************************************** */
@@ -297,6 +345,46 @@
 
   /* SEARCH ***************************************************************** */
   /* EVENT/COOLSCULPTING **************************************************** */
+  .event-coolsculpting {
+    background: url('../../img/event-cool-sculpting-bg@2x.jpg') top / cover;
+    min-height: 600px;
+    padding: 40px 0;
+
+    .db__event__wrapper {
+      position: relative;
+      height: 450px;
+
+      .db__event__white-box {
+        display: block;
+        height: 85%;
+        width: 100%;
+        max-width: 1300px;
+        background: rgba($color-white, .8);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .db__containerish {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-column-gap: 4rem;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+
+        img {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+
   /* ABOUT US  ************************************************************** */
   /* BOTOX/FILLERS ********************************************************** */
   /* IPL ******************************************************************** */

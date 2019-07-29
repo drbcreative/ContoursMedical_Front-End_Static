@@ -50,6 +50,10 @@ section {
       .db__section-info {
         z-index: 5;
 
+        .ui-btn-group {
+          // background: red;
+        }
+
         h1 {
           text-align: center;
         }
@@ -89,6 +93,23 @@ section {
 /* -------------------------------------------------------------------------- */
 /* EVENT AND COOLSCULPTING SECTION */
 /* -------------------------------------------------------------------------- */
+.event-coolsculpting {
+  background: url('../../img/event-cool-sculpting-bg@2x.jpg') top / cover;
+  min-height: 600px;
+
+  .db__event__wrapper {
+    position: relative;
+
+    .db__event__white-box {
+      display: none;
+    }
+
+    .db__containerish {
+      padding: 40px 20px;
+      display: grid;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* ABOUT US SECTION */
