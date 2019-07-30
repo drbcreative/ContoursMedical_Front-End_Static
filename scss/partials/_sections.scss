@@ -142,6 +142,15 @@ section {
 /* -------------------------------------------------------------------------- */
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
+.botox-fillers {
+  background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
+  padding: 40px 20px;
+
+  .db__containerish {
+    display: grid;
+    grid-gap: 1rem;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* IPL SECTION */
