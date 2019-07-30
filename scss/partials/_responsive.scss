@@ -115,6 +115,27 @@
 
   /* IPL ******************************************************************** */
   /* NEWSLETTER ************************************************************* */
+  .newsletter {
+    padding: 0;
+
+    .db__containerish {
+      padding: 40px 20px;
+      text-align: center;
+
+      form {
+        display: grid;
+        grid-gap: .4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        input {
+          height: 40px;
+          border: none;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
   /* LASER HAIR ************************************************************* */
   /* LASER GENESIS ********************************************************** */
   /* TESTIMONIAL ************************************************************ */
@@ -309,7 +330,6 @@
     display: flex;
     align-items: flex-end;
 
-    .db__containerish {}
 
     .db__section-info {
       text-align: center;
@@ -318,6 +338,27 @@
   }
 
   /* NEWSLETTER ************************************************************* */
+  .newsletter {
+    padding: 40px 20px;
+
+    .db__containerish {
+      padding: 40px 20px;
+      text-align: center;
+
+      form {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr .5fr;
+
+        input {
+          height: 40px;
+          border: none;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
   /* LASER HAIR ************************************************************* */
   /* LASER GENESIS ********************************************************** */
   /* TESTIMONIAL ************************************************************ */
@@ -556,6 +597,28 @@
 
   /* HERO ******************************************************************* */
   /* SEARCH ***************************************************************** */
+  /* NEWSLETTER ************************************************************* */
+  .newsletter {
+    padding: 60px 0;
+
+    .db__containerish {
+      padding: 40px 20px;
+      text-align: center;
+
+      form {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr .5fr;
+
+        input {
+          height: 40px;
+          border: none;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
   /* REQUEST APPT. ********************************************************** */
   /* FOOTER ***************************************************************** */
 }

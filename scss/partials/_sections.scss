@@ -179,6 +179,30 @@ section {
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
+.newsletter {
+  padding: 0;
+
+  .db__containerish {
+    background: url('../../img/newsletter-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+    text-align: center;
+
+    form {
+      display: grid;
+      grid-gap: .4rem;
+
+      input {
+        height: 40px;
+        border: none;
+        padding: .5rem;
+      }
+
+      .ui-btn {
+        height: 40px;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* LASER HAIR REDUCTION SECTION */
