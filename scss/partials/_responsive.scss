@@ -36,14 +36,6 @@
         align-items: center;
         justify-content: center;
       }
-
-      .db__col-right {
-        // grid-row: 1;
-        // grid-column: 2;
-        // display: flex;
-        // align-items: center;
-        // justify-content: flex-end;
-      }
     }
   }
 
@@ -128,8 +120,6 @@
     .db__foot-left {
       display: block;
     }
-
-    .db__foot-middle {}
 
     .db__foot-right {
       display: block;
@@ -269,6 +259,27 @@
 
 
   /* ABOUT US  ************************************************************** */
+  .about-us {
+    height: 550px;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+    position: relative;
+
+    .section-info {
+      text-align: center;
+    }
+
+    #about-us-carousel {
+      display: block;
+    }
+
+    @import "db_carousel";
+  }
+
   /* BOTOX/FILLERS ********************************************************** */
   /* IPL ******************************************************************** */
   /* NEWSLETTER ************************************************************* */
@@ -437,6 +448,27 @@
   }
 
   /* ABOUT US  ************************************************************** */
+  .about-us {
+    height: 600px;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+    position: relative;
+
+    .section-info {
+      text-align: center;
+    }
+
+    #about-us-carousel {
+      display: block;
+    }
+
+    @import "db_carousel";
+  }
+
   /* BOTOX/FILLERS ********************************************************** */
   /* IPL ******************************************************************** */
   /* NEWSLETTER ************************************************************* */

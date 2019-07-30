@@ -1,11 +1,14 @@
-.db__carousel {
-  position: relative;
+.carousel {
+  position: absolute;
   height: auto;
   width: 90%;
-  margin: 0 auto;
+  // margin: 0 auto;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
 
-  @media screen and (min-width: 1400px) {
-    width: 100%;
+  @media screen and (min-width: 1200px) {
+    top: 50%;
   }
 
   .carousel__track-container {
@@ -13,6 +16,7 @@
     height: 500px;
     position: relative;
     overflow: hidden;
+    border: 3px solid white;
 
     .carousel__track {
       padding: 0;
@@ -32,55 +36,50 @@
     .carousel__image {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 
   .carousel__button {
     position: absolute;
-    top: 25%;
-    // transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    height: 93px;
-    width: 101px;
+    width: 28px;
+    height: 42px;
     z-index: 90;
 
     &.carousel__button--right {
-      right: -50px;
-
-      &::before {
-        content: ">";
-        color: #fff;
-        font-size: 100%;
-        line-height: 100%;
-      }
+      right: -40px;
+      background: transparent;
+      border: none;
     }
 
     &.carousel__button--left {
-      left: -50px;
-
-      &::before {
-        content: "<";
-        color: #fff;
-        font-size: 100%;
-        line-height: 100%;
-      }
+      left: -40px;
+      background: transparent;
+      border: none;
     }
   }
 
   .carousel__nav {
     // background: pink;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    grid-gap: 2rem;
+    align-items: center;
     padding: 1rem 0;
 
     .carousel__indicator {
       opacity: .3;
       transition: opacity 250ms ease-in-out;
       cursor: pointer;
+      width: 15px;
+      height: 15px;
+      background: $color-main;
+      opacity: .7;
+      border-radius: 50%;
+      border: none;
+      margin-right: .5rem;
 
       &.current-slide {
         opacity: 1;
