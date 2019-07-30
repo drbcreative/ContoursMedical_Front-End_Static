@@ -152,8 +152,12 @@ input {
     line-height: 4rem;
   }
 
-  h2,
+  h2 {
+    line-height: 2rem;
+  }
+
   h3 {
+    font-size: 2rem;
     line-height: 2rem;
   }
 }

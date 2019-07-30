@@ -148,13 +148,33 @@ section {
 
   .db__containerish {
     display: grid;
-    grid-gap: 1rem;
+    // grid-gap: 1rem;
+    // grid-template-columns: 1fr;
   }
 }
 
 /* -------------------------------------------------------------------------- */
 /* IPL SECTION */
 /* -------------------------------------------------------------------------- */
+.ipl {
+  // background: url('../../img/ipl-bg@2x.jpg') center / cover;
+  background: $color-dark;
+  padding: 40px 20px;
+  position: relative;
+
+  .db__section-info {
+    text-align: center;
+    z-index: 5;
+
+    .ui-btn-white {
+      color: $color-dark;
+    }
+
+    .ui-btn-white-ol:hover {
+      color: $color-dark;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */

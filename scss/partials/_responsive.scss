@@ -97,48 +97,48 @@
       }
     }
   }
-}
 
-/* ABOUT US  ************************************************************** */
-/* BOTOX/FILLERS ********************************************************** */
-.botox-fillers {
-  background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
-  padding: 40px 20px;
 
-  .db__containerish {
-    display: grid;
-    grid-template-columns: 75%;
-    grid-column-gap: 2rem;
-    justify-content: center;
-  }
-}
+  /* ABOUT US  ************************************************************** */
+  /* BOTOX/FILLERS ********************************************************** */
+  .botox-fillers {
+    background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
+    padding: 40px 20px;
 
-/* IPL ******************************************************************** */
-/* NEWSLETTER ************************************************************* */
-/* LASER HAIR ************************************************************* */
-/* LASER GENESIS ********************************************************** */
-/* TESTIMONIAL ************************************************************ */
-/* CONSULTATION *********************************************************** */
-/* FOOTER ***************************************************************** */
-.footer2 {
-  padding: 0 2rem;
-
-  .db__containerish {
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: max-content 1fr max-content;
-    align-items: center;
-
-    .db__foot-left {
-      display: block;
-    }
-
-    .db__foot-right {
-      display: block;
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 75%;
+      grid-gap: 2rem;
+      justify-content: center;
     }
   }
-}
 
+  /* IPL ******************************************************************** */
+  /* NEWSLETTER ************************************************************* */
+  /* LASER HAIR ************************************************************* */
+  /* LASER GENESIS ********************************************************** */
+  /* TESTIMONIAL ************************************************************ */
+  /* CONSULTATION *********************************************************** */
+  /* FOOTER ***************************************************************** */
+  .footer2 {
+    padding: 0 2rem;
+
+    .db__containerish {
+      display: grid;
+      grid-template-rows: 1;
+      grid-template-columns: max-content 1fr max-content;
+      align-items: center;
+
+      .db__foot-left {
+        display: block;
+      }
+
+      .db__foot-right {
+        display: block;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* LARGE BREAKPOINT (Desktops 992px and up) */
@@ -289,7 +289,7 @@
   /* BOTOX/FILLERS ********************************************************** */
   .botox-fillers {
     background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
-    padding: 18rem 40px 20px 40px;
+    padding: 18rem 20px 60px 20px;
 
     .db__containerish {
       display: grid;
@@ -300,6 +300,23 @@
   }
 
   /* IPL ******************************************************************** */
+  .ipl {
+    background: url('../../img/ipl-bg@2x.jpg') center / cover;
+    // background: $color-dark;
+    padding: 40px 20px;
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+
+    .db__containerish {}
+
+    .db__section-info {
+      text-align: center;
+      z-index: 5;
+    }
+  }
+
   /* NEWSLETTER ************************************************************* */
   /* LASER HAIR ************************************************************* */
   /* LASER GENESIS ********************************************************** */
@@ -490,7 +507,7 @@
   /* BOTOX/FILLERS ********************************************************** */
   .botox-fillers {
     background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
-    padding: 18rem 40px 20px 40px;
+    // padding: 18rem 40px 20px 40px;
 
     .db__containerish {
       display: grid;
@@ -501,6 +518,22 @@
   }
 
   /* IPL ******************************************************************** */
+  .ipl {
+    background: url('../../img/ipl-bg@2x.jpg') center / cover;
+    // background: $color-dark;
+    padding: 40px 20px;
+    position: relative;
+    height: 860px;
+    display: flex;
+    align-items: flex-end;
+
+
+    .db__section-info {
+      text-align: center;
+      z-index: 5;
+    }
+  }
+
   /* NEWSLETTER ************************************************************* */
   /* LASER HAIR ************************************************************* */
   /* LASER GENESIS ********************************************************** */
