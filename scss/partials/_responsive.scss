@@ -137,7 +137,29 @@
   }
 
   /* LASER HAIR ************************************************************* */
+  .laser-hair {
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 75%;
+      grid-gap: 2rem;
+      justify-content: center;
+    }
+  }
+
   /* LASER GENESIS ********************************************************** */
+  .laser-genesis {
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 75%;
+      grid-gap: 2rem;
+      justify-content: center;
+    }
+  }
+
   /* TESTIMONIAL ************************************************************ */
   /* CONSULTATION *********************************************************** */
   /* FOOTER ***************************************************************** */
@@ -360,7 +382,39 @@
   }
 
   /* LASER HAIR ************************************************************* */
+  .laser-hair {
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      align-items: center;
+    }
+  }
+
   /* LASER GENESIS ********************************************************** */
+  .laser-genesis {
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      align-items: center;
+
+      .db__col-left {
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      .db__col-right {
+        grid-row: 1;
+        grid-column: 2;
+      }
+    }
+  }
+
   /* TESTIMONIAL ************************************************************ */
   /* CONSULTATION. ********************************************************** */
   .appointments {
@@ -577,7 +631,28 @@
 
   /* NEWSLETTER ************************************************************* */
   /* LASER HAIR ************************************************************* */
+  .laser-hair {
+    padding: 40px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem;
+      align-items: center;
+    }
+  }
+
   /* LASER GENESIS ********************************************************** */
+  .laser-genesis {
+    padding: 40px 20px 120px 20px;
+
+    .db__containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem;
+    }
+  }
+
   /* TESTIMONIAL ************************************************************ */
   /* CONSULTATION *********************************************************** */
   .appointments {

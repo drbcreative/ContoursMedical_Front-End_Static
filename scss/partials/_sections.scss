@@ -207,10 +207,43 @@ section {
 /* -------------------------------------------------------------------------- */
 /* LASER HAIR REDUCTION SECTION */
 /* -------------------------------------------------------------------------- */
+.laser-hair {
+  padding: 40px 20px;
+
+  .db__containerish {
+    display: grid;
+    grid-gap: 1rem;
+
+    .db__col-left {
+      position: relative;
+
+      .db__models-text {
+        color: $color-dark-accent;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* LASER GENESIS SECTION */
 /* -------------------------------------------------------------------------- */
+.laser-genesis {
+  padding: 0 20px 40px 20px;
+
+  .db__containerish {
+    display: grid;
+    grid-gap: 1rem;
+
+    .db__col-right {
+      position: relative;
+
+      .db__models-text {
+        color: $color-dark-accent;
+        left: 2% !important;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* TESTIMONIAL SECTION */
