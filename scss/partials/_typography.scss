@@ -64,6 +64,14 @@ h5 {
   font-size: 1.875rem; // 40px
   line-height: 1.875rem;
   font-weight: 300;
+
+  &.is-italic {
+    font-style: italic;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
 }
 
 /* All Other Headers */

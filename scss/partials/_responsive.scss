@@ -416,9 +416,31 @@
   }
 
   /* TESTIMONIAL ************************************************************ */
+  .testimonial {
+    background: url('../../img/testimonial-bg@2x.jpg') center / cover;
+    padding: 40px 20px;
+
+    .db__containerish {
+      height: 650px;
+      max-height: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .db__section-info {
+        text-align: center;
+
+        h5 {
+          font-family: $font-primary;
+          font-size: 30px;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+
   /* CONSULTATION. ********************************************************** */
   .appointments {
-    background: url("../img/appointments-bg@2x.jpg") center / cover;
     min-height: 400px;
     padding: 40px 20px;
     display: flex;
@@ -426,7 +448,6 @@
     justify-content: center;
 
     .appointment-wrapper {
-      background: rgba($color-white, 0.90);
       padding: 2rem 8%;
       max-width: 865px;
       display: grid;
@@ -654,9 +675,16 @@
   }
 
   /* TESTIMONIAL ************************************************************ */
+  .testimonial {
+
+    .db__containerish {
+      height: 700px;
+    }
+  }
+
   /* CONSULTATION *********************************************************** */
   .appointments {
-    padding: 12rem 8rem 6rem 8rem;
+    padding: 3rem 8rem 3rem 8rem;
 
     .appointment-wrapper {
       max-width: 860px;
