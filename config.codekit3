@@ -136,6 +136,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/botox-img.jpg": {
+		"ft": 16384,
+		"iS": 22413,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/botox-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/botox-img@2x.jpg": {
 		"ft": 16384,
 		"iS": 71351,
@@ -144,7 +155,7 @@
 		"oAP": "/img/botox-img@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/consult-bg@2x.jpg": {
@@ -158,14 +169,25 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/cool-sculpting-img.png": {
+		"ft": 32768,
+		"iS": 1090650,
+		"oA": 0,
+		"oAP": "/img/cool-sculpting-img.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/cool-sculpting-img@2x.png": {
 		"ft": 32768,
 		"iS": 2874808,
 		"oA": 0,
 		"oAP": "/img/cool-sculpting-img@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -191,6 +213,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/fillers-img.jpg": {
+		"ft": 16384,
+		"iS": 36592,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/fillers-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/fillers-img@2x.jpg": {
 		"ft": 16384,
 		"iS": 108284,
@@ -199,7 +232,7 @@
 		"oAP": "/img/fillers-img@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/footer-bg@2x.jpg": {

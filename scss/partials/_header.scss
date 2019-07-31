@@ -16,7 +16,7 @@ header {
   width: 100%;
   height: 30px;
   height: auto;
-  background-color: $color-light;
+  background-color: $color-white;
 
   .db__containerish {
     display: grid;
@@ -33,7 +33,19 @@ header {
       font-family: $font-primary;
       font-size: 15px;
       font-weight: 300;
-      color: $color-text-grey;
+      color: $color-dark-accent;
+
+      &:hover {
+        color: $color-main;
+        text-decoration: none;
+      }
+    }
+
+    .db__topbar-link-small {
+      font-family: $font-primary;
+      font-size: 12px;
+      font-weight: 300;
+      color: $color-dark-accent;
 
       &:hover {
         color: $color-main;
@@ -42,7 +54,7 @@ header {
     }
 
     .db__social-link {
-      color: $color-text-grey;
+      color: $color-dark-accent;
       margin-right: 0.5rem;
 
       &:hover {
@@ -92,7 +104,17 @@ header {
       // display: none;
     }
 
+    .db__topbar-link-small {
+      margin-right: 1rem;
+      // display: none;
+    }
+
     .db__topbar-link:last-child {
+      margin-right: 0 !important;
+      display: inline-block;
+    }
+
+    .db__topbar-link-small:last-child {
       margin-right: 0 !important;
       display: inline-block;
     }

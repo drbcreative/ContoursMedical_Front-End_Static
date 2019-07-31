@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 .db__containerish {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   height: auto;
   padding: 0;
@@ -17,7 +17,7 @@ section {
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .db__hero {
-  background: url('../../img/hero-bg@2x.jpg') top / cover;
+  background: url('../img/hero-bg@2x.jpg') top / cover;
 
   .db__hero__main {
     padding: 0 1rem;
@@ -27,7 +27,7 @@ section {
     }
 
     .db__containerish {
-      background: url('../../img/hero@2x.jpg') center / cover;
+      background: url('../img/hero@2x.jpg') center / cover;
       height: 75vh;
       max-height: 624px;
       padding: 40px 20px;
@@ -91,7 +91,7 @@ section {
 /* EVENT AND COOLSCULPTING SECTION */
 /* -------------------------------------------------------------------------- */
 .event-coolsculpting {
-  background: url('../../img/event-cool-sculpting-bg@2x.jpg') top / cover;
+  background: url('../img/event-cool-sculpting-bg@2x.jpg') top / cover;
   min-height: 600px;
 
   .db__event__wrapper {
@@ -111,8 +111,10 @@ section {
   .db__coolsculpting {
     padding: 0 20px 40px 20px;
 
+
     .db__containerish {
       display: grid;
+      position: relative;
     }
   }
 }
@@ -121,7 +123,7 @@ section {
 /* ABOUT US SECTION */
 /* -------------------------------------------------------------------------- */
 .about-us {
-  background: url('../../img/about-us-bg@2x.jpg') center / cover;
+  background: url('../img/about-us-bg@2x.jpg') center / cover;
   min-height: 300px;
   max-height: 700px;
   padding: 40px 10px;
@@ -143,13 +145,17 @@ section {
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
 .botox-fillers {
-  background: url('../../img/botox-fillers-bg@2x.jpg') top / cover;
+  background: url('../img/botox-fillers-bg@2x.jpg') top / cover;
   padding: 40px 20px;
 
   .db__containerish {
     display: grid;
     // grid-gap: 1rem;
     // grid-template-columns: 1fr;
+
+    .db__col-left {
+      position: relative;
+    }
   }
 }
 
@@ -157,7 +163,7 @@ section {
 /* IPL SECTION */
 /* -------------------------------------------------------------------------- */
 .ipl {
-  // background: url('../../img/ipl-bg@2x.jpg') center / cover;
+  // background: url('../img/ipl-bg@2x.jpg') center / cover;
   background: $color-dark;
   padding: 40px 20px;
   position: relative;
@@ -183,7 +189,7 @@ section {
   padding: 0;
 
   .db__containerish {
-    background: url('../../img/newsletter-bg@2x.jpg') center / cover;
+    background: url('../img/newsletter-bg@2x.jpg') center / cover;
     padding: 40px 20px;
     text-align: center;
 
@@ -249,12 +255,11 @@ section {
 /* TESTIMONIAL SECTION */
 /* -------------------------------------------------------------------------- */
 .testimonial {
-  background: url('../../img/testimonial-bg@2x.jpg') center / cover;
+  background: url('../img/testimonial-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .db__containerish {
     height: 40vh;
-    max-height: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +281,7 @@ section {
 /* BOOK CONSULTATION SECTION */
 /* -------------------------------------------------------------------------- */
 .appointments {
-  background: url("../../img/consult-bg@2x.jpg") center / cover;
+  background: url("../img/consult-bg@2x.jpg") center / cover;
   min-height: 400px;
   padding: 40px 20px;
   display: flex;

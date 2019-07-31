@@ -4,13 +4,75 @@
 /* -------------------------------------------------------------------------- */
 /* FOOTER 1 SECTION */
 /* -------------------------------------------------------------------------- */
+.footer1 {
+  background: url('../img/footer-bg@2x.jpg') center / cover;
+  min-height: 300px;
+  padding: 20px 20px;
 
+  .db__containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .db__body-text {
+      font-weight: 300;
+    }
+
+    img {
+      max-width: 197px;
+      height: 92px;
+    }
+
+    .line {
+      border-bottom: 1px solid $color-white;
+      color: $color-white;
+      width: 85%;
+      max-width: 462px;
+      opacity: .5;
+    }
+
+    .social-media-icons {
+      .db__social-link {
+        color: $color-white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      .db__social-link:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .footer-nav-link {
+        color: $color-white;
+        font-family: $font-primary;
+        font-size: 16px;
+
+        &:hover {
+          color: $color-light-accent;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .db__small-copy {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* FOOTER 2 SECTION */
 /* -------------------------------------------------------------------------- */
 .db__footer2 {
-  background-color: $color-light;
+  background-color: $color-white;
   width: 100%;
   // padding: 0.6rem 30px;
   height: 50px;
@@ -19,9 +81,9 @@
 
   .db__footer-2-copy {
     font-family: $font-primary;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
-    color: $color-text-grey;
+    color: $color-dark-accent;
     padding: 0;
     margin: 0;
   }
